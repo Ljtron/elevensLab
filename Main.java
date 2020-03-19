@@ -7,6 +7,7 @@ public class Main{
 
         d.deal();
         d.deal();
+        d.deal();
 
         System.out.println(d.toString());
     }
