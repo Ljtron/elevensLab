@@ -11,7 +11,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<Card> cards;
+	private ArrayList<Card> cards = new ArrayList<Card>();
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -80,7 +80,9 @@ public class Deck {
 		if(size == 0){
 			return null;
 		}
-		return null;
+		Card dealtCard = cards.get(size - 1);
+		size --;
+		return dealtCard;
 
 	}
 
